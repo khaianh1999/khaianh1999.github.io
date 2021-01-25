@@ -418,6 +418,7 @@ section {
   font-weight: bold;
   transition: all 0.5s;
   cursor: pointer;
+  font-size: 30px;
 }
 .one-phone-name p:hover {
   color: red;
@@ -427,7 +428,7 @@ section {
   color: red;
 }
 .one-phone-name i {
-  font-size: 14px;
+  font-size: 24px;
   margin-right: -4px;
   cursor: pointer;
   color: gray;

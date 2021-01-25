@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const phones = JSON.parse(localStorage.getItem("phones")) || [];
+
+  render(phones);
   //show menu
   var bar = document.getElementsByClassName("hamberger");
   const menu = document.getElementsByClassName("menu")[0];
@@ -140,7 +143,7 @@ const items = [
   },
 ];
 const menu = [];
-function render() {
+function render(phones) {
   const html = items
     .map(
       (item) =>
@@ -263,4 +266,4 @@ function update(item, quantity) {
   render();
 }
 
-render();
+
